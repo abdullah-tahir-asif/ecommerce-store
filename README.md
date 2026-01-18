@@ -31,7 +31,6 @@ A full-stack e-commerce store built using Python Flask, Bootstrap, and n8n autom
 * **Signup:** Bootstrap Form → n8n Webhook → Airtable + Email Trigger
 * **Checkout:** Buy Now Button → n8n Webhook → Airtable Order Log
 
-##Author
+## Author
 
-*Abdullah Tahir
-*Sofware Engineering student
+* **Abdullah Tahir** - *Software Engineering student*
