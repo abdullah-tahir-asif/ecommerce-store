@@ -1,29 +1,36 @@
-#Tahir Studio – E-Commerce Store
+# Tahir Studio
 
-Tahir Studio is a full-stack e-commerce web application built using Bootstrap for the frontend and Flask for the backend. It integrates n8n automation workflows, Airtable as a database, and email notifications to automate user signups and order processing.
+A full-stack e-commerce store built using Python Flask, Bootstrap, and n8n automation. It features real-time data synchronization with Airtable and automated email notifications.
 
-#🚀 Features:
-Responsive UI with Bootstrap
-Flask-powered backend
-Add to Cart and Checkout functionality
-Webhook integration with n8n
-Airtable database for user and order storage
-Automatic email confirmation on signup and checkout
+## Features
 
-#🛠 Tech Stack:
-Frontend: HTML, Bootstrap, Custom CSS
-Backend: Flask (Python)
-Automation: n8n
-Database: Airtable
+* Automated user signup via n8n webhooks
+* Real-time data storage in Airtable database
+* Automated welcome emails upon registration
+* Integrated Add to Cart and Checkout system
+* "Buy Now" functionality with instant order logging
 
-#⚙️ Setup:
-git clone https://github.com/abdullah-tahir-asif/tahir-studio.git
-cd tahir-studio
-pip install -r requirements.txt
-python app.py
-Open http://localhost:5000 in your browser.
+## Technologies Used
 
+* Python
+* Flask
+* Bootstrap (Frontend)
+* Inline Customized CSS
+* n8n (Workflow Automation)
+* Airtable (Database)
 
+## How to Run
 
-#👨‍💻 Author:
-Abdullah Tahir
+1. Install Flask and Requests:
+   `pip install flask requests`
+2. Run `python app.py`
+3. Open `http://127.0.0.1:5000/`
+
+## Workflow Details
+
+* **Signup:** Bootstrap Form → n8n Webhook → Airtable + Email Trigger
+* **Checkout:** Buy Now Button → n8n Webhook → Airtable Order Log
+
+  ##Author
+*Abdullah Tahir
+*Sofware Engineering student
