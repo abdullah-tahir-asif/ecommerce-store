@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* General Styles */
+        body {
+            background-image: url('/static/logo2.png');
+            background-size: cover;
+        
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Login Container */
+    
+            
+            .login-container {
+            outline:1px solid white;
+            background-color: rgba(11, 6, 6, 0.2); /* 0.6 = transparency */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 350px;
+           backdrop-filter: blur(1px); 
+            
+                    }
+
+        
+
+        .login-container h2 {
+            text-align: center;
+            color:white;
+            margin-bottom:25px;
+        } 
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffffff;
+            font-weight: 600;
+
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            font-size: 16px;
+             background-color: rgba(11, 6, 6, 0.2);
+            outline: 1px solid white; 
+            color: #ffffff;
+            
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #000000;
+        }
+
+        /* Button */
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(11, 6, 6, 0.2);
+            outline: 2px solid white; 
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: rgba(11, 6, 6, 0.6)
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Sign up</h2>
+        
+        <form action="/signup" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact" placeholder="Phone Number" required>
+            </div>
+
+             <div class="form-group">
+                <label for="password">Email Address</label>
+                <input type="email" id="emial" name="email" placeholder="Your email" required>
+            </div>
+
+            <button type="submit" class="login-btn">Sign up</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %}<title>home</title>{% endblock %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+  </head>
+
+
+  <body class="bg-light">
+
+   
+
+    <!-- navbar -->
+    <nav style="background: rgba(0,0,0,0.3);" class="navbar navbar-expand-lg navbar-dark  sticky-top">
+        
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{url_for('home')}}">
+      <img src="static/logo.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top">
+    </a>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Women
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/stitched">Stitched </a></li>
+            <li><a class="dropdown-item" href="/unstitched">Unstitched</a></li>   
+                
+          </ul>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Men
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/shalwar_kameez">Shalwar Kameez</a></li>
+            <li><a class="dropdown-item" href="/western">western</a></li>
+            
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Winter Collection
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/sweaters">Sweaters</a></li>
+            <li><a class="dropdown-item" href="/coat">Coats and Blazers</a></li>
+            <li><a class="dropdown-item" href="/sweatshirt">Sweat Shirts</a></li>
+            
+          </ul>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fragrances
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/perfume">Perfumes</a></li>
+          </ul>
+        </li>
+
+      </ul>
+     
+       <a href="/signup"> <button class="btn btn-outline-light" >Sign up</button></a>
+      
+    </div>
+  </div>
+</nav>
+
+{% block content %}
+ <!-- alert -->
+<div class="alert bg-dark text-white my-0" role="alert">
+  BLESSED FRIDAY SALE - FLAT 20% & 40% OFF, Check it out!!!
+</div>
+
+
+
+<!-- carousel -->
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"  >
+  <div class="carousel-inner">
+   <a href="/stitched"><div class="carousel-item active" data-bs-interval="3000">
+      <img src="static/1.png" class="d-block w-100" alt="..."></a> 
+    </div>
+    <a href="/stitched"><div class="carousel-item" data-bs-interval="3000">
+      <img src="static/6.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <a href="/shalwar_kameez"><div class="carousel-item" data-bs-interval="3000">
+      <img src="static/7.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <a href="/perfume"> <div class="carousel-item" data-bs-interval="3000">
+      <img src="static/9.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- grid -->
+
+<div class="container text-center mt-3 ">
+  <div class="row">
+    <div class="col-sm-8">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+   <a href="/sweaters"> <div class="carousel-item active">
+      <img src="static/2ndc1.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <a href="/sweaters">
+    <div class="carousel-item">
+      <img src="static/2ndc2.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+  <a href="/sweatshirt">
+    <div class="carousel-item">
+      <img src="static/2ndc3.png" class="d-block w-100" alt="...">
+      </a>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-4">
+
+    
+
+
+
+
+      <div class="card text-center">
+  <div class="card-header">
+    <h4>New Arrival</h4>
+  </div>
+  <div class="card-body p-5">
+    <h5 class="card-title">ENCORE WS 25/26</h5>
+    <p class="card-text">Discover the latest in winter fashion. Our new collection combines warmth with a modern, sharp look.</p>
+  </div>
+  <div class="card-footer text-body-secondary">
+   <h4>Limited Edition</h4> 
+  </div>
+</div>
+
+    </div>
+  </div>
+ 
+</div>
+
+
+
+<!-- sale alert -->
+
+<div  style="background: rgba(0,0,0,0.6);" class="alert alert-success sticky-bottom text-white " role="alert">
+  <h5 class="alert-heading">"THE 40% OFF FLASH EVENT: OUR BIGGEST DROP YET!"</h5>
+  <p>New year, new look. Take up to 40% off our signature jackets and formal suiting.</p>
+  
+</div>
+
+
+<!-- card1 -->
+<a href="/coat">
+<div class="card text-bg-dark">
+  <img src="static\mencard.png" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Signature Formals</h5>
+    <p class="card-text">From boardroom meetings to black-tie events, make a statement with silhouettes that define modern sophistication. Elevate your wardrobe with our latest seasonal arrivals.</p>
+    <p class="card-text"><small>2025 COLLECTION</small></p>
+  </div>
+</div></a>
+
+<!-- cardsss -->
+
+<div class="container text-center mt-3">
+  <div class="row row-cols-2">
+    <div class="col">
+<a href="/perfume"><div class="card text-bg-dark ">
+  <img src="static\perfume1-home.png" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Aura of Elegance</h5>
+    <p class="card-text"></p>
+    <p class="card-text"><small></small></p>
+  </div>
+</div>
+</a>
+
+
+    </div>
+    <div class="col">
+      <a href="/perfume"><div class="card text-bg-dark ">
+  <img src="static\perfume2-home.png" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Her Signature</h5>
+    <p class="card-text"></p>
+    <p class="card-text"><small></small></p>
+  </div>
+</div>
+</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+<!-- footer -->
+<footer class="container-fluid bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Tahir Studio</h5>
+                <p>Providing the finest stitched and unstitched collections. We bring quality fabric and modern designs to your doorstep.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Collections</h5>
+                <p><a href="#" class="text-white text-decoration-none">Stitched</a></p>
+                <p><a href="#" class="text-white text-decoration-none">Unstitched</a></p>
+                <p><a href="#" class="text-white text-decoration-none">Winter Collection</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                <p><i class="fas fa-home me-3"></i> Karachi, Pakistan</p>
+                <p><i class="fas fa-envelope me-3"></i> info@tahirstudio.com</p>
+                <p><i class="fas fa-phone me-3"></i> +92 300 1234567</p>
+            </div>
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <p>© 2025 Copyright: <strong class="text-warning">Tahir Studio</strong></p>
+            </div>
+            <div class="col-md-5 col-lg-4 text-center text-md-end">
+                <a href="#" class="text-white me-4 text-decoration-none"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-4 text-decoration-none"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white text-decoration-none"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

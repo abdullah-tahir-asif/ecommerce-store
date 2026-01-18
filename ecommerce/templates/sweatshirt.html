@@ -1,0 +1,85 @@
+{% extends "index.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  </head>
+  <body>
+     <!-- navbar -->
+
+    
+{% block content %}
+<!-- heading -->
+
+<div class="container-fluid text-center bg-dark text-light ">
+  <div class="row">
+    <div class="col">
+      Sweatshirts
+    </div>
+  </div>
+</div>
+
+<!-- image cards inside grid -->
+
+<div class="container text-center my-3">
+  <div class="row">
+    <div class="col">
+      <div class="card mx-auto" style="width: 18rem;">
+  <img src="static/sweatshirt1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title fw-bold text-center">Men's Blue Sweatshirt</h5>
+    <p class="card-text text-center"><span style="text-decoration: line-through;">Rs.5,900  |</span>Sale price Rs. 5,309</p>
+    <div class="text-center"><a href="/add-to-crat/{{19}}" class="btn btn-primary">Add to cart</a></div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto" style="width: 18rem;">
+  <img src="static/sweatshirt2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title fw-bold text-center">Men's Dark Navy Sweatshirt</h5>
+    <p class="card-text text-center"><span style="text-decoration: line-through;">Rs.5,999  |</span>Sale price Rs. 4,999</p>
+    <div class="text-center"><a href="/add-to-crat/{{20}}" class="btn btn-primary">Add to cart</a></div>
+  </div>
+</div>
+      
+    </div>
+    <div class="col">
+      <div class="card mx-auto" style="width: 18rem;">
+  <img src="static/sweatshirt3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title fw-bold text-center">Men's Fawn Sweatshirt</h5>
+    <p class="card-text text-center"><span style="text-decoration: line-through;">Rs.5,900  |</span>Sale price Rs. 4,999</p>
+    <div class="text-center"><a href="/add-to-crat/{{21}}" class="btn btn-primary">Add to cart</a></div>
+  </div>
+</div>
+    </div>
+  
+  </div>
+</div>
+
+<!-- cart button -->
+
+<a href="/cart"><button type="button" class="btn btn-secondary btn-lg">view cart  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg></button></a>
+
+
+
+
+
+ 
+{% endblock %}
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
